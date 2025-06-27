@@ -11,6 +11,7 @@ from googleapiclient.discovery import build
 from googleapiclient.http import MediaFileUpload
 from PIL import Image, ImageDraw, ImageFont
 from utils import load_env, get_video_folder, save_text_to_file, log_to_file, sanitize_folder_name
+env = load_env()
 
 # ───────────────────────────────────────────────────────── config ──
 BASE_DIR            = Path(__file__).parent
@@ -20,7 +21,7 @@ SHEET_NAME          = "Back to Zero – Input Sheet"
 WORKSHEET_INDEX     = 0
 CLIENT_SECRETS_FILE = BASE_DIR / "client_secret.json"
 SUPPORTED_LANG      = {"Hindi"}
-HINDI_VOICE_ID      = os.getenv("HINDI_VOICE_ID", "EXAVITQu4vr4xnSDxMaL")
+HINDI_VOICE_ID      = env.get("HINDI_VOICE_ID", "EXAVITQu4vr4xnSDxMaL")
 FFMPEG_CMD          = "ffmpeg"
 MAX_TTS_CHARS       = 5000  # ElevenLabs limit
 
@@ -315,3 +316,5 @@ if __name__ == "__main__":
         batch_update(ws, idx, "⚙️ Processing")
         process(idx, row, ws, env)
     logging.info("✓ All pending rows processed.")
+
+
