@@ -1,7 +1,5 @@
-## autoyt
+## AutoYT
 100% Autonomous Hindi Audiobook &amp; Knowledge YouTube Channel Generator. AI creates, voices, thumbnails, renders, and uploads scheduled videos from a Google Sheet—fully automated, Mac/Windows friendly.
-
-## AutoYT – Fully Autonomous Hindi YouTube Channel Generator
 
 AI-powered pipeline to generate, voice, thumbnail, render, and upload high-quality scheduled Hindi knowledge videos for YouTube—directly from a Google Sheet!
 
@@ -134,6 +132,12 @@ To suggest new topics daily:
 ## FULL PROJECT SETUP
 
 📘 Full Setup Guide → [Click to view](./FULL_PROJECT_SETUP.md)
+
+
+====================
+DISCLAIMER
+====================
+This channel uses AI-generated and public-domain content for educational use. Book summaries and visuals follow Indian copyright fair use policy (§52).
 
 
 ## 👨‍💻 Contributors

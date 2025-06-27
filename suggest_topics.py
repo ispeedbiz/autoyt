@@ -7,7 +7,8 @@ import gspread
 from openai import OpenAI
 from datetime import datetime, timedelta
 from google.oauth2.service_account import Credentials
-
+from utils import load_env
+env = load_env()
 
 
 # CONFIG
@@ -22,7 +23,7 @@ MORNING_TIME = "09:00"
 EVENING_TIME = "18:00"
 
 # Load env
-OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY")
+OPENAI_API_KEY = env.get("OPENAI_API_KEY")
 client = OpenAI(api_key=OPENAI_API_KEY)
 
 # GPT-4o Enhanced Prompt for Top-Class Content Suggestions
