@@ -192,3 +192,8 @@ cython_debug/
 #  refer to https://docs.cursor.com/context/ignore-files
 .cursorignore
 .cursorindexingignore
+videos/
+client_secret.json
+service_account.json
+token.pickle
+.DS_Store
